@@ -18,8 +18,8 @@ export class LoginComponent implements OnInit {
     validationMail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     constructor(private fb: FormBuilder, private router:Router) {
         this.loginForm = this.fb.group({
-            user: ['',[Validators.required, Validators.pattern(this.validationMail)]],
-            password: ['',Validators.required],
+            user: ['jalejandro142@gmail.com',[Validators.required, Validators.pattern(this.validationMail)]],
+            password: ['Test123456',Validators.required],
         });
     }
 
@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
         }
         console.log(data_user);
 
-        this.router.navigate(['/'])
+        this.router.navigate(['/dashboard'])
 
         Swal.fire({
             icon: 'success',

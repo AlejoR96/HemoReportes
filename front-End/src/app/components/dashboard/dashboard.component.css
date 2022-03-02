@@ -1,3 +1,12 @@
+/* .brand{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+
 .listMenuComp{
     width: 100%;
     display: flex;
@@ -7,9 +16,7 @@
 
 }
 
-button{
-    width: 100%;
-}
+
 
 li{
  list-style: none;
@@ -24,7 +31,7 @@ li{
 } */
 
 .sideBar{
-    background-color: #17202A;
+    background-color: var(--color-project);
     min-height: 100vh;
 
 }

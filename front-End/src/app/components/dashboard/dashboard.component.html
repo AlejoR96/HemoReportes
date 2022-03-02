@@ -4,13 +4,15 @@
             <div>
                 <h3>HemoReportes</h3>
                 <i class="fa-solid fa-laptop-medical fa-5x"></i>
-                <i class=""></i>
             </div>
                 <ul class="listMenuComp">
                     <li routerLink="/medicamento"><button class="fw-bold btn-global">Medicamentos</button></li>
                     <li (click)="buildPage()"><button class="fw-bold btn-global">Aplicaciones</button></li>
                     <li (click)="buildPage()"><button class="fw-bold btn-global">Formatos</button></li>
                 </ul>
+        </div>
+        <div class="col-10">
+            <app-navbar  titleNavbar={{titleNavbar}}></app-navbar>
         </div>
     </div>
 </div>
