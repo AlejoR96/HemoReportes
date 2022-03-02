@@ -1,0 +1,9 @@
+.colorNavbar{
+    background-color: var(--color-project);
+    margin: 20px 20px 0 10px;
+    border-radius: 45px;
+}
+
+.navBarMain .navbar-brand{
+    margin-right: 75%;
+}

@@ -1,0 +1,32 @@
+.listMenuComp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+button{
+    width: 100%;
+}
+
+li{
+ list-style: none;
+ transform: translateX(-25px);
+ text-align: center;
+ margin: 15px;
+
+}
+
+/* li:hover{
+    background-color: #84aff9;
+} */
+
+.sideBar{
+    background-color: #17202A;
+    min-height: 100vh;
+
+}
+
+
