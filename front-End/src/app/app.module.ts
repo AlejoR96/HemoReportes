@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 /* forms Reactive */
 
 import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule } from '@angular/common/http'
 
 
 /* Components */
@@ -11,6 +12,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { Page404Component } from './components/page404/page404.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MedicineComponent } from './components/medicine/medicine.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -18,12 +22,16 @@ import { Page404Component } from './components/page404/page404.component';
     AppComponent,
     HomeComponent,
     LoginComponent,
-    Page404Component
+    Page404Component,
+    DashboardComponent,
+    MedicineComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
